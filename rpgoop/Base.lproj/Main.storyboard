@@ -99,6 +99,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHK-Lz-Mm2">
+                                <rect key="frame" x="226" y="461" width="98" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="9IZ-bc-goi"/>
+                                    <constraint firstAttribute="width" constant="98" id="A8C-ot-7AR"/>
+                                </constraints>
+                                <state key="normal" image="attack"/>
+                                <connections>
+                                    <action selector="attackTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LOi-rg-lGt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -108,6 +119,7 @@
                             <constraint firstItem="69q-mM-Bjy" firstAttribute="centerY" secondItem="kfX-oK-zQq" secondAttribute="centerY" id="8LV-nu-b6a"/>
                             <constraint firstItem="vSO-5c-hrl" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9hE-np-oN2"/>
                             <constraint firstAttribute="bottom" secondItem="E6d-A3-E0X" secondAttribute="bottom" constant="-71" id="AFv-UY-YBn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LHK-Lz-Mm2" secondAttribute="trailing" constant="150" id="Dbe-EL-T1J"/>
                             <constraint firstItem="obI-BF-wYV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FSF-Jj-wnf"/>
                             <constraint firstItem="fxd-I9-N6j" firstAttribute="centerY" secondItem="VhW-yp-cjN" secondAttribute="centerY" id="FqA-5G-Kfy"/>
                             <constraint firstItem="kfX-oK-zQq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GMX-cX-y2C"/>
@@ -117,11 +129,13 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vSO-5c-hrl" secondAttribute="bottomMargin" constant="60" id="SqZ-f5-3Fb"/>
                             <constraint firstAttribute="bottomMargin" secondItem="E6d-A3-E0X" secondAttribute="bottom" constant="-63" id="ZB3-De-4dH"/>
                             <constraint firstItem="E6d-A3-E0X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aAd-0C-kwO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LHK-Lz-Mm2" secondAttribute="bottom" constant="20" id="cfy-NP-A0D"/>
                             <constraint firstAttribute="bottomMargin" secondItem="E6d-A3-E0X" secondAttribute="bottom" constant="-71" id="e0B-EY-IkT"/>
                             <constraint firstItem="E6d-A3-E0X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ej6-vY-5uL"/>
                             <constraint firstItem="E6d-A3-E0X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ipJ-Ro-s9E"/>
                             <constraint firstItem="2C8-JX-xaZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jKz-xl-1Hf"/>
                             <constraint firstAttribute="trailing" secondItem="obI-BF-wYV" secondAttribute="trailing" id="kT8-Fw-kZd"/>
+                            <constraint firstItem="LHK-Lz-Mm2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lhh-vN-qq6"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="obI-BF-wYV" secondAttribute="bottom" id="oey-qd-Qei"/>
                             <constraint firstItem="E6d-A3-E0X" firstAttribute="top" secondItem="2C8-JX-xaZ" secondAttribute="bottom" id="p9A-RH-58w"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fxd-I9-N6j" secondAttribute="trailing" constant="180" id="pb3-Wn-96h"/>
@@ -132,6 +146,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Dbe-EL-T1J"/>
                                 <exclude reference="AFv-UY-YBn"/>
                                 <exclude reference="e0B-EY-IkT"/>
                                 <exclude reference="p9A-RH-58w"/>
@@ -141,6 +156,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="attackTappedBtn" destination="LHK-Lz-Mm2" id="O4u-cc-xPg"/>
                         <outlet property="enemyHpLbl" destination="fxd-I9-N6j" id="f0Y-5X-hfS"/>
                         <outlet property="enemyImg" destination="vSO-5c-hrl" id="yQC-C1-EaN"/>
                         <outlet property="playerHpLbl" destination="VhW-yp-cjN" id="SAb-jF-uAE"/>
@@ -153,6 +169,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="attack" width="198" height="223"/>
         <image name="bg" width="768" height="1024"/>
         <image name="enem1" width="574" height="487"/>
         <image name="ground" width="768" height="164"/>

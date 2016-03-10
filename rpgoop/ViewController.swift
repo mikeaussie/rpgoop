@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var enemyHpLbl: UILabel!
     
+    @IBOutlet weak var attackTappedBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,9 @@ class ViewController: UIViewController {
     
     }
 
+    @IBAction func attackTapped(sender: UIButton) {
+        
+    }
 
 
 }
