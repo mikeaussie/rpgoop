@@ -23,6 +23,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="obI-BF-wYV">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnD-Ps-TpI">
+                                <rect key="frame" x="454" y="451" width="87" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="Pi4-bC-6fz"/>
+                                    <constraint firstAttribute="width" constant="87" id="p92-JZ-1Kx"/>
+                                </constraints>
+                                <state key="normal" image="chest"/>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="print" translatesAutoresizingMaskIntoConstraints="NO" id="kfX-oK-zQq">
                                 <rect key="frame" x="65" y="28" width="471" height="65"/>
                                 <constraints>
@@ -125,8 +133,10 @@
                             <constraint firstItem="kfX-oK-zQq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GMX-cX-y2C"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E6d-A3-E0X" secondAttribute="bottom" constant="-35" id="GNH-NK-U73"/>
                             <constraint firstAttribute="trailingMargin" secondItem="E6d-A3-E0X" secondAttribute="trailing" constant="-20" id="Gng-Sg-zBx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fnD-Ps-TpI" secondAttribute="trailing" constant="39" id="IIL-bB-uXh"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2C8-JX-xaZ" secondAttribute="bottom" constant="65" id="RWk-W8-TT8"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vSO-5c-hrl" secondAttribute="bottomMargin" constant="60" id="SqZ-f5-3Fb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fnD-Ps-TpI" secondAttribute="bottom" constant="67" id="Y1a-QQ-FEz"/>
                             <constraint firstAttribute="bottomMargin" secondItem="E6d-A3-E0X" secondAttribute="bottom" constant="-63" id="ZB3-De-4dH"/>
                             <constraint firstItem="E6d-A3-E0X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aAd-0C-kwO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LHK-Lz-Mm2" secondAttribute="bottom" constant="20" id="cfy-NP-A0D"/>
@@ -157,6 +167,7 @@
                     </view>
                     <connections>
                         <outlet property="attackTappedBtn" destination="LHK-Lz-Mm2" id="O4u-cc-xPg"/>
+                        <outlet property="chestBtn" destination="fnD-Ps-TpI" id="bwW-cr-t4u"/>
                         <outlet property="enemyHpLbl" destination="fxd-I9-N6j" id="f0Y-5X-hfS"/>
                         <outlet property="enemyImg" destination="vSO-5c-hrl" id="yQC-C1-EaN"/>
                         <outlet property="playerHpLbl" destination="VhW-yp-cjN" id="SAb-jF-uAE"/>
@@ -171,6 +182,7 @@
     <resources>
         <image name="attack" width="198" height="223"/>
         <image name="bg" width="768" height="1024"/>
+        <image name="chest" width="393" height="440"/>
         <image name="enem1" width="574" height="487"/>
         <image name="ground" width="768" height="164"/>
         <image name="player" width="356" height="475"/>

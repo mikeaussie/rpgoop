@@ -20,6 +20,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var attackTappedBtn: UIButton!
     
+    @IBOutlet weak var chestBtn: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
