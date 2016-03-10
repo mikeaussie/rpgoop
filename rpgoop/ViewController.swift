@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var textLbl: UILabel!
     
+    @IBOutlet weak var playerHpLbl: UILabel!
+    
+    @IBOutlet weak var enemyHpLbl: UILabel!
     
     
     override func viewDidLoad() {
