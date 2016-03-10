@@ -33,20 +33,21 @@
                                 <rect key="frame" x="202" y="200" width="378" height="357"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="vSO-5c-hrl" secondAttribute="height" multiplier="18:17" id="8ZY-3U-MQa"/>
-                                    <constraint firstAttribute="width" constant="378" id="RhD-mt-Vaa"/>
-                                    <constraint firstAttribute="height" constant="357" id="mJs-hZ-58m"/>
+                                    <constraint firstAttribute="width" constant="250" id="RhD-mt-Vaa"/>
+                                    <constraint firstAttribute="height" constant="250" id="mJs-hZ-58m"/>
                                     <constraint firstAttribute="height" constant="195" id="pku-Hw-ntu"/>
                                     <constraint firstAttribute="width" constant="146" id="sYq-mY-nh6"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="8ZY-3U-MQa"/>
                                         <exclude reference="pku-Hw-ntu"/>
                                         <exclude reference="sYq-mY-nh6"/>
                                     </mask>
                                 </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="E6d-A3-E0X">
-                                <rect key="frame" x="0.0" y="539" width="600" height="132"/>
+                                <rect key="frame" x="0.0" y="531" width="600" height="132"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="600" id="CCo-MF-YKH"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="132" id="CwU-XA-Kz6"/>
@@ -92,8 +93,8 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E6d-A3-E0X" secondAttribute="bottom" constant="-35" id="GNH-NK-U73"/>
                             <constraint firstAttribute="trailingMargin" secondItem="E6d-A3-E0X" secondAttribute="trailing" constant="-20" id="Gng-Sg-zBx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2C8-JX-xaZ" secondAttribute="bottom" constant="65" id="RWk-W8-TT8"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vSO-5c-hrl" secondAttribute="bottomMargin" constant="65" id="SqZ-f5-3Fb"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="E6d-A3-E0X" secondAttribute="bottom" constant="-71" id="ZB3-De-4dH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vSO-5c-hrl" secondAttribute="bottomMargin" constant="60" id="SqZ-f5-3Fb"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="E6d-A3-E0X" secondAttribute="bottom" constant="-63" id="ZB3-De-4dH"/>
                             <constraint firstItem="E6d-A3-E0X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aAd-0C-kwO"/>
                             <constraint firstAttribute="bottomMargin" secondItem="E6d-A3-E0X" secondAttribute="bottom" constant="-71" id="e0B-EY-IkT"/>
                             <constraint firstItem="E6d-A3-E0X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ej6-vY-5uL"/>
@@ -107,12 +108,18 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="AFv-UY-YBn"/>
+                                <exclude reference="e0B-EY-IkT"/>
                                 <exclude reference="p9A-RH-58w"/>
                                 <exclude reference="0CI-he-BRE"/>
                                 <exclude reference="GNH-NK-U73"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="enemyImg" destination="vSO-5c-hrl" id="yQC-C1-EaN"/>
+                        <outlet property="textLbl" destination="69q-mM-Bjy" id="Vnd-Ze-w61"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
